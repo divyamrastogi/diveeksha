@@ -404,6 +404,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	@media screen and (max-width: $screen-sm) {
 		height: 600px;
+		background-position: -200px !important;
 	}
 	.display-t,
 	.display-tc {
@@ -436,6 +437,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event {
 	height: 850px;
 	float: left;
+	@media screen and (max-width: $screen-sm) {
+		background-position: -670px;
+	}
 	.display-t,
 	.display-tc {
 		height: 700px;
@@ -1317,6 +1321,9 @@ form {
 		right: 0;
 		bottom: 0;
 		background: rgba(0, 0, 0, .4);
+	}
+	@media screen and (max-width: $screen-sm) {
+		background-position: -200px 0;
 	}
 	.fh5co-heading {
 		h2 {
