@@ -1337,6 +1337,7 @@ form label {
 
 #fh5co-started {
   position: relative;
+  background-position: top;
 }
 #fh5co-started .overlay {
   position: absolute;
