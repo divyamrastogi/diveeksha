@@ -268,13 +268,15 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		var d = new Date(2019, 0, 17);
+		var d = new Date(2019, 0, 17, 5, 30);
 
 		// default example
 		simplyCountdown('.simply-countdown-one', {
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
-			day: d.getDate()
+			day: d.getDate(),
+			hours: d.getHours(),
+			minutes: d.getMinutes(),
 		});
 
 		//jQuery example
@@ -282,6 +284,8 @@
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
 			day: d.getDate(),
+			hours: d.getHours(),
+			minutes: d.getMinutes(),
 			enableUtc: false
 		});
 	</script>
