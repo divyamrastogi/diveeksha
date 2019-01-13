@@ -39,9 +39,16 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js')
+				.then(function () {
+					console.log('Service Worker Registered');
+				});
+		}
+	</script>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
 	<!-- Animate.css -->
@@ -169,7 +176,7 @@
 											<span>January, 2019</span>
 										</div>
 										<p>
-											Join us on an evening filled with music, dance and celebrations. 
+											Join us on an evening filled with music, dance and celebrations.
 											Make use of the dance floor and the DJ!
 											And of course there will be food too!
 										</p>
@@ -289,7 +296,6 @@
 			enableUtc: false
 		});
 	</script>
-
 </body>
 
 </html>
