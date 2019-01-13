@@ -22,7 +22,7 @@ $brand-bg-color: $brand-white;
 
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
-
+$timer-dimension: 100px;
 
 
 // Mixin
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		z-index: 10;
 	}
 	@media screen and (max-width: $screen-sm) {
-		height: 600px;
+		height: 500px;
 		background-position: -200px !important;
 	}
 	.display-t,
@@ -962,14 +962,13 @@ form {
 .simply-countdown > .simply-section {
     /* coutndown blocks */
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: $timer-dimension;
+    height: $timer-dimension;
     background: rgba($brand-primary,.8);
     margin: 0 4px;
     @include border-radius(50%);
     position: relative;
-
-    animation: pulse 1s ease infinite, 
+		animation: pulse 1s ease infinite;
 }
 
 @keyframes pulse {
@@ -982,8 +981,8 @@ form {
     /* countdown block inner div */
     display: table-cell;
     vertical-align: middle;
-    height: 100px;
-    width: 100px;
+    height: $timer-dimension;
+		width: $timer-dimension;
 }
 
 .simply-countdown > .simply-section .simply-amount,
@@ -995,7 +994,7 @@ form {
 
 .simply-countdown > .simply-section .simply-amount {
 	font-size: 30px;
-    /* amounts */
+		/* amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
