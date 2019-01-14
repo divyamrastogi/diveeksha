@@ -1,4 +1,4 @@
-var cacheName = 'wedding-cache';
+var cacheName = 'wedding-cache-1';
 var cssFiles = [
   '/css/animate.css',
   '/css/icomoon.css',
